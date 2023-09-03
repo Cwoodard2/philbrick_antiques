@@ -1,7 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import InventoryAntique from '../components/InventoryAntique.astro';
 ---
 
 <Layout title="Inventory">
-    <p>This is the inventory</p>
+    <main class="md:mx-48 md:my-16">
+        <h1 class="text-4xl text-center">Inventory</h1>
+        <InventoryAntique title='Antique Name' description="This item is from the dark ages IDK. But hey we don't like to talk about the dark ages" img=''/>
+    </main>
 </Layout>

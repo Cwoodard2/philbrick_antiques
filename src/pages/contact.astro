@@ -3,24 +3,49 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Contact">
-    <main>
-        <h1>Contact Us</h1>
-        <p>
-            In need of assistance or want to inquire about an item? Fill out the form or use the information below to get into contact with us.
-        </p>
+    <main class="md:mx-48 md:my-16 flex flex-col items-center grow-1 justify-around min-h-screen">
+        <div class="w-3/5">
+            <h1 class="text-3xl text-center">Contact Us</h1>
+            <p class="text-center">
+                In need of assistance or want to inquire about an item? Fill out the form or use the information below to get into contact with us.
+            </p>
+        </div>
+        <div class="border-black border-2 rounded-md flex flex-col p-6 w-3/5">
+            <div>
+                <label>
+                    Full Name
+                </label>
+                <br>
+                <input class="border-black border rounded-sm w-full">
+            </div>
+            <div>
+                <label>
+                    Email
+                </label>
+                <br>
+                <input class="border-black border rounded-sm w-full">
+            </div>
+            <div>
+                <label>
+                    Message
+                </label>
+                <br>
+                <textarea class="border-black border rounded-sm w-full"></textarea>
+            </div>
+        </div>
+        <p class="before:w-3 before:bg-black before:h-1 before:left-0 relative before:absolute before: bottom-1/2 inline-block after:w-3 after:bg-black after:h-1 after:right-0 after:absolute">Or</p>
         <div>
-            <label>
-                Full Name
-            </label>
-            <input>
-            <label>
-                Email
-            </label>
-            <input>
-            <label>
-                Message
-            </label>
-            <textarea></textarea>
+            <ul class="list-none flex flex-row gap-10">
+                <li>
+                    Phone Number
+                </li>
+                <li>
+                    Email
+                </li>
+                <li>
+                    Location
+                </li>
+            </ul>
         </div>
     </main>
 </Layout>

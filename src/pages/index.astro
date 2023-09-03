@@ -1,15 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import plateImage from "../images/plateImage.jpeg";
+import { Image } from 'astro:assets';
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
 		<div class="relative">
-			<img src="../plateImage.jpeg" class="w-full h-full"/>
-			<div class="absolute w-1/2 h-1/2">
-				<h1 class="text-3xl">John Philbrick Antiques</h1>
-				<a href="./inventory"><button>Browse</button></a>
+			<!-- <img src={plateImage} class="w-full h-full"/> -->
+			<Image src={plateImage} alt="plate image" class="w-full object-cover h-3/5"/>
+			<div class="absolute right-1/2 bottom-1/2 translate-x-1/2 translate-y-1/2 text-white">
+				<h1 class="text-6xl">John Philbrick Antiques</h1>
+				<p>The best antiques in Edwardsville</p>
+				<a href="./inventory"><button class="bg-black p-2">Browse</button></a>
 			</div>
 		</div>
 	</main>
