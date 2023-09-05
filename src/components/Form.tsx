@@ -16,29 +16,29 @@ export default function Form() {
   };
 
     return (
-        <form ref={form} onSubmit={sendEmail} className="border-black border-2 rounded-md flex flex-col p-6 w-3/5">
+        <form ref={form} onSubmit={sendEmail} className="border-black border-2 rounded-md flex flex-col p-6 w-3/5 gap-4">
             <div>
-                <label>
+                <label htmlFor='from_name'>
                     Full Name
                 </label>
                 <br />
                 <input className="border-black border rounded-sm w-full" name="from_name"/>
             </div>
             <div>
-                <label>
+                <label htmlFor='email'>
                     Email
                 </label>
                 <br />
                 <input className="border-black border rounded-sm w-full" name="email"/>
             </div>
             <div>
-                <label>
+                <label htmlFor='message'>
                     Message
                 </label>
                 <br />
                 <textarea className="border-black border rounded-sm w-full" name='message'></textarea>
             </div>
-            <input type="submit" value="Send" />
+            <input type="submit" value="Send" className='bg-black text-white p-2 cursor-pointer'/>
         </form>
     );
 };

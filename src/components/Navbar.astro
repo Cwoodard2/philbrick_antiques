@@ -1,9 +1,10 @@
 ---
-
+import Logo from "../images/Logo.svg";
+import { Image } from "astro:assets";
 ---
 
 <div class="flex flex-row p-6 bg-navGrey text-white">
-    <p>Logo</p>
+    <a href="./"><Image src={Logo} alt="logo" class="w-10 h-10 cursor-pointer" /></a>
     <ul class="ml-auto flex flex-row gap-10 text-lg">
         <li><a href="./">Home</a></li>
         <li><a href="./inventory">Inventory</a></li>
