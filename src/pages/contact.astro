@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Form from '../components/Form.tsx';
 ---
 
 <Layout title="Contact">
@@ -10,29 +11,7 @@ import Layout from '../layouts/Layout.astro';
                 In need of assistance or want to inquire about an item? Fill out the form or use the information below to get into contact with us.
             </p>
         </div>
-        <div class="border-black border-2 rounded-md flex flex-col p-6 w-3/5">
-            <div>
-                <label>
-                    Full Name
-                </label>
-                <br>
-                <input class="border-black border rounded-sm w-full">
-            </div>
-            <div>
-                <label>
-                    Email
-                </label>
-                <br>
-                <input class="border-black border rounded-sm w-full">
-            </div>
-            <div>
-                <label>
-                    Message
-                </label>
-                <br>
-                <textarea class="border-black border rounded-sm w-full"></textarea>
-            </div>
-        </div>
+        <Form client:load/>
         <p class="before:w-3 before:bg-black before:h-1 before:left-0 relative before:absolute before: bottom-1/2 inline-block after:w-3 after:bg-black after:h-1 after:right-0 after:absolute">Or</p>
         <div>
             <ul class="list-none flex flex-row gap-10">
@@ -48,4 +27,12 @@ import Layout from '../layouts/Layout.astro';
             </ul>
         </div>
     </main>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("2GuZPLvQ3ROla7NzI");
+   })();
+</script>
 </Layout>
