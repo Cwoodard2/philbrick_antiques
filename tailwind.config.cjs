@@ -5,6 +5,15 @@ module.exports = {
 		extend: {
 			colors: {
 				navGrey: "#2C2A2A"
+			},
+			animation: {
+				inOut: 'fadeIn 2s forwards linear'
+			},
+			keyframes: {
+				inOut: {
+					'0%': { transform: 'translateY(-10vw)' },
+					'100%': { transform: 'translateY(0vw)' },
+				  },
 			}
 		},
 	},
