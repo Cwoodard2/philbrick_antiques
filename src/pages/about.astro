@@ -1,33 +1,34 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 import Logo from "../images/Logo.svg";
-import { Image } from 'astro:assets';
+import { Image } from "astro:assets";
 ---
 
 <Layout title="About">
-    <main>
-        <div class="flex flex-row gap-4 md:mx-48 md:my-16">
-            <div>
-                <h1 class="text-5xl">Meet John</h1>
-                <p>My first antiques venue was the Ridgefield Connecticut Antiques Show ~in
-                1989. The building was a skating rink with wall sections open to the
-                outside. Lewis Scranton set up next to me and a bird flew in and landed on
-                his head…Lew was the tallest thing in the show, so it seemed like a good
-                omen! Joanne Woodward bought a painted wall basket from me, and Paul
-                just glared. It was a start…of sorts.
-                Over the years my focus remained the same: I tried to buy and sell objects
-                that would be familiar to the domestic setting of 18 th century America. A
-                Delft bowl from Holland, a candlestick from France, a table from coastal
-                Massachusetts.
-                Americana with a world perspective, just as it was in the Colonial period of
-                America. Trade goods: a basket made by native Americans, Andirons
-                made in Britain and banister back chairs made throughout the 13 colonies.
-                Now I try and sell what pleases me, but the focus remains the same.
-                Hopefully collectors are still out there for a thumbnail molded blanket chest
-                or a set of cutlery with handles made in holland and blades made in
-                England…hopefully.</p>
-            </div>
-            <Image src={Logo} alt="Logo" class="h-2/5 w-2/5"/>
-        </div>
-    </main>
+  <main>
+    <div class="flex flex-row gap-4 md:mx-48 md:my-16">
+      <div>
+        <h1 class="text-5xl">Meet John</h1>
+        <p>
+          My first antiques venue was the Ridgefield Connecticut Antiques Show
+          ~in 1989. The building was a skating rink with wall sections open to
+          the outside. Lewis Scranton set up next to me and a bird flew in and
+          landed on his head…Lew was the tallest thing in the show, so it seemed
+          like a good omen! Joanne Woodward bought a painted wall basket from
+          me, and Paul just glared. It was a start…of sorts. Over the years my
+          focus remained the same: I tried to buy and sell objects that would be
+          familiar to the domestic setting of 18 th century America. A Delft
+          bowl from Holland, a candlestick from France, a table from coastal
+          Massachusetts. Americana with a world perspective, just as it was in
+          the Colonial period of America. Trade goods: a basket made by native
+          Americans, Andirons made in Britain and banister back chairs made
+          throughout the 13 colonies. Now I try and sell what pleases me, but
+          the focus remains the same. Hopefully collectors are still out there
+          for a thumbnail molded blanket chest or a set of cutlery with handles
+          made in holland and blades made in England…hopefully.
+        </p>
+      </div>
+      <Image src={Logo} alt="Logo" class="h-2/5 w-2/5" />
+    </div>
+  </main>
 </Layout>

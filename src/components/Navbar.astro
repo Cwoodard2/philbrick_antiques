@@ -1,20 +1,27 @@
 ---
 import Logo from "../images/Logo.svg";
 import { Image } from "astro:assets";
+import HourglassIllustration from "../images/HourglassIllustration.png";
 ---
 
 <div class="flex flex-row p-6 bg-navGrey text-white">
-    <a href="./"><Image src={Logo} alt="logo" class="w-10 h-10 cursor-pointer" /></a>
-    <ul class="ml-auto flex flex-row gap-10 text-lg">
-        <li><a href="./">Home</a></li>
-        <li><a href="./inventory">Inventory</a></li>
-        <li><a href="./about">About</a></li>
-        <li><a href="./contact">Contact</a></li>
-    </ul>
+  <a href="./"
+    ><Image
+      src={HourglassIllustration}
+      alt="logo"
+      class="w-10 h-fit cursor-pointer object-cover"
+    /></a
+  >
+  <ul class="ml-auto flex flex-row gap-10 text-lg items-center">
+    <li><a href="./">Home</a></li>
+    <li><a href="./inventory">Inventory</a></li>
+    <li><a href="./about">About</a></li>
+    <li><a href="./contact">Contact</a></li>
+  </ul>
 </div>
 
 <style>
-    ul {
-        font-family: Source Serif Pro;
-    }
+  ul {
+    font-family: Source Serif Pro;
+  }
 </style>

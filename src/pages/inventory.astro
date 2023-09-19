@@ -1,16 +1,36 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import InventoryAntique from '../components/InventoryAntique.astro';
+import Layout from "../layouts/Layout.astro";
+import InventoryItem from "../components/InventoryAntiqueReact";
 ---
 
 <Layout title="Inventory">
-    <main class="md:mx-48 md:my-16">
-        <h1 class="text-5xl text-center">Inventory</h1>
-        <div class="flex flex-col gap-10">
-            <InventoryAntique title='Antique Name' description="This item is from the dark ages IDK. But hey we don't like to talk about the dark ages" img=''/>
-            <InventoryAntique title='Antique Name' description="This item is from the dark ages IDK. But hey we don't like to talk about the dark ages" img=''/>
-            <InventoryAntique title='Antique Name' description="This item is from the dark ages IDK. But hey we don't like to talk about the dark ages" img=''/>
-            <InventoryAntique title='Antique Name' description="This item is from the dark ages IDK. But hey we don't like to talk about the dark ages" img=''/>
-        </div>
-    </main>
+  <main class="md:mx-48 md:my-16">
+    <h1 class="text-5xl text-center">Inventory</h1>
+    <div class="flex flex-col gap-10">
+      <InventoryItem
+        title="Antique Name"
+        description="This item is from the dark ages IDK. But hey we don't like to talk about the dark ages"
+        img=""
+        client:load
+      />
+      <InventoryItem
+        title="Antique Name"
+        description="This item is from the dark ages IDK. But hey we don't like to talk about the dark ages"
+        img=""
+        client:load
+      />
+      <InventoryItem
+        title="Antique Name"
+        description="This item is from the dark ages IDK. But hey we don't like to talk about the dark ages"
+        img=""
+        client:load
+      />
+      <InventoryItem
+        title="Antique Name"
+        description="This item is from the dark ages IDK. But hey we don't like to talk about the dark ages"
+        img=""
+        client:load
+      />
+    </div>
+  </main>
 </Layout>

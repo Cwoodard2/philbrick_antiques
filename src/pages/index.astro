@@ -1,20 +1,25 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 import plateImage from "../images/plateImage.jpeg";
-import { Image } from 'astro:assets';
+import { Image } from "astro:assets";
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<div class="relative">
-			<!-- <img src={plateImage} class="w-full h-full"/> -->
-			<Image src={plateImage} alt="plate image" class="brightness-50 object-stretch"/>
-			<div class="absolute right-1/2 bottom-1/2 translate-x-1/2 translate-y-1/2 text-white text-center">
-				<h1 class="text-5xl">John Philbrick Antiques</h1>
-				<p class="text-xl">The best antiques in Edwardsville</p>
-				<a href="./inventory"><button class="bg-black p-2">Browse</button></a>
-			</div>
-		</div>
-	</main>
+  <main>
+    <div class="relative">
+      <!-- <img src={plateImage} class="w-full h-full"/> -->
+      <Image
+        src={plateImage}
+        alt="plate image"
+        class="brightness-50 oobject-contain h-96 w-screen"
+      />
+      <div
+        class="absolute right-1/2 bottom-1/2 translate-x-1/2 translate-y-1/2 text-white text-center"
+      >
+        <h1 class="text-5xl">John Philbrick Antiques</h1>
+        <p class="text-xl">The best antiques in Edwardsville</p>
+        <a href=`./inventory`><button class="bg-black p-2">Browse</button></a>
+      </div>
+    </div>
+  </main>
 </Layout>
-
