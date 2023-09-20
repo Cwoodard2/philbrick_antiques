@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 
 export default function AntiqueItem(props: any) {
 
-  const [currentPic, setCurrentPic] = useState("");
-  const [allPics, setAllPics] = useState([]);
+  const [currentPic, setCurrentPic] = useState<string>("");
+  const [allPics, setAllPics] = useState<string[]>([]);
   const urlsearchparams: any = new URLSearchParams(window.location.search);
   const params = Object.fromEntries(urlsearchparams.entries());
 
@@ -20,7 +20,7 @@ export default function AntiqueItem(props: any) {
         <ul className="flex flex-row justify-center gap-4">
           {allPics.map((pic: any) => (
             <li>
-              <img src={pic} className="h-6 w-6 cursor-pointer" onClick={() => setCurrentPic(pic)}/>
+              <img src={pic} className="h-6 w-6 cursor-pointer" onClick={() => setCurrentPic(pic)} alt="Antique Item"/>
             </li>
           ))}
         </ul>

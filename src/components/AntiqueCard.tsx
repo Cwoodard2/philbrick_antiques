@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import plateImage from "../images/plateImage.jpeg";
-import AntiqueItem from "./Item";
+import AntiqueItem from "./AntiqueItem";
 import { Image } from "astro:assets";
 
 export default function InventoryItem(props: any) {
