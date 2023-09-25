@@ -10,7 +10,6 @@ export default function Form() {
   if (Object.keys(params).length == 1) {
     item = params['item'];
   }
-  console.log(item);
 
   const form = useRef<any>();
 

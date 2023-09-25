@@ -33,14 +33,13 @@ export default function AntiqueItem(props: any) {
               Purchase
             </button>
           </a>
-          <a href={`./contact?item=${params['title']}`}>
+          <a href={`/contact?item=${params['title']}`}>
             <button className="border-black border py-1 text-black px-5">
               Inquire
             </button>
           </a>
         </div>
         <p>Powered By Etsy</p>
-        {/* <button onClick={() => closeModal()}>X</button> */}
       </div>
     </div>
   );
