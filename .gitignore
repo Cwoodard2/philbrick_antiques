@@ -20,3 +20,5 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+.firebase/hosting.cHVibGlj.cache
+.firebase/hosting.ZGlzdA.cache
