@@ -5,20 +5,7 @@ import NavDesktop from "./NavDesktop.astro";
 import NavMobile from "./NavMobile.astro";
 ---
 
-<div class="flex flex-col md:flex-row p-6 bg-navGrey text-white">
-  <!-- <a href="/"
-    ><Image
-      src={HourglassIllustration}
-      alt="logo"
-      class="w-10 h-fit cursor-pointer object-cover"
-    /></a
-  >
-  <ul class="ml-auto flex flex-row gap-10 text-lg items-center">
-    <li><a href="/">Home</a></li>
-    <li><a href="/inventory">Inventory</a></li>
-    <li><a href="/about">About</a></li>
-    <li><a href="/contact">Contact</a></li>
-  </ul> -->
+<div class="flex flex-col md:flex-row p-6 bg-navGrey text-white sticky top-0 z-50">
   <NavDesktop></NavDesktop>
 <NavMobile></NavMobile>
 </div> 
