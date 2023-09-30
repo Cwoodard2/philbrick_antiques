@@ -1,10 +1,12 @@
 ---
 import { Image } from "astro:assets";
 import HourglassIllustration from "../images/HourglassIllustration.png";
+import NavDesktop from "./NavDesktop.astro";
+import NavMobile from "./NavMobile.astro";
 ---
 
-<div class="flex flex-row p-6 bg-navGrey text-white">
-  <a href="/"
+<div class="flex flex-col md:flex-row p-6 bg-navGrey text-white">
+  <!-- <a href="/"
     ><Image
       src={HourglassIllustration}
       alt="logo"
@@ -16,8 +18,11 @@ import HourglassIllustration from "../images/HourglassIllustration.png";
     <li><a href="/inventory">Inventory</a></li>
     <li><a href="/about">About</a></li>
     <li><a href="/contact">Contact</a></li>
-  </ul>
-</div>
+  </ul> -->
+  <NavDesktop></NavDesktop>
+<NavMobile></NavMobile>
+</div> 
+
 
 <style>
   ul {

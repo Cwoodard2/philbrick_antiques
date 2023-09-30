@@ -1,0 +1,32 @@
+---
+import HourglassIllustration from "../images/HourglassIllustration.png";
+import { Image } from "astro:assets";
+---
+
+<div class="md:hidden flex items-center">
+    <a href="/"
+    ><Image
+      src={HourglassIllustration}
+      alt="logo"
+      class="w-10 h-fit cursor-pointer"
+    /></a
+  >
+    <svg class="w-6 h-6 text-gray-800 dark:text-white ml-auto" id="menu-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+    </svg>
+</div>
+<div id="navigation" class="hidden">
+    <ul class="ml-auto flex flex-col gap-10 text-lg items-center md:hidden">
+        <li><a href="/">Home</a></li>
+        <li><a href="/inventory">Inventory</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+</div>
+
+<script>
+    document.getElementById("menu-icon")?.addEventListener("click", () => {
+        console.log("Got here in case other thing doesnt work");
+        document.getElementById("navigation")?.classList.toggle("hidden");
+    })
+</script>
