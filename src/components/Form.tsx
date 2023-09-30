@@ -37,7 +37,7 @@ export default function Form() {
     <form
       ref={form}
       onSubmit={sendEmail}
-      className="border-black border rounded-sm flex flex-col p-6 w-3/5 gap-4"
+      className="border-black border rounded-sm flex flex-col p-6 w-full md:w-3/5 gap-4"
     >
       <div>
         <label htmlFor="from_name">Full Name</label>

@@ -5,9 +5,9 @@ import Form from "../components/Form.tsx";
 
 <Layout title="Contact">
   <main
-    class="md:mx-48 md:my-16 flex flex-col items-center grow-1 justify-around min-h-screen"
+    class="my-8 mx-12 md:mx-48 md:my-16 flex flex-col items-center grow-1 justify-around gap-4 min-h-screen"
   >
-    <div class="w-3/5">
+    <div class="md:w-3/5">
       <h1 class="text-5xl text-center">Contact Us</h1>
       <p class="text-center">
         In need of assistance or want to inquire about an item? Fill out the
@@ -16,12 +16,12 @@ import Form from "../components/Form.tsx";
     </div>
     <Form client:only="react" />
     <p
-      class="before:w-3 before:bg-black before:h-1 before:left-0 relative before:absolute before: bottom-1/2 inline-block after:w-3 after:bg-black after:h-1 after:right-0 after:absolute"
     >
-      Or
+    <!-- class="before:w-3 before:bg-black before:h-1 before:left-0 relative before:absolute before: bottom-1/2 inline-block after:w-3 after:bg-black after:h-1 after:right-0 after:absolute" -->
+      --  Or --
     </p>
     <div>
-      <ul class="list-none flex flex-row gap-10">
+      <ul class="list-none flex flex-col md:flex-row gap-10 items-center">
         <li class="flex flex-row gap-2">
           <svg
             class="w-6 h-6 text-gray-800"

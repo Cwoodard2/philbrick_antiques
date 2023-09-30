@@ -6,9 +6,9 @@ import { Image } from "astro:assets";
 
 <Layout title="About">
   <main>
-    <div class="flex flex-row gap-4 md:mx-48 md:my-16">
+    <div class="flex flex-col-reverse md:flex-row gap-4 mx-12 my-8 md:mx-48 md:my-16">
       <div>
-        <h1 class="text-5xl">Meet John</h1>
+        <h1 class="text-5xl md:text-left text-center">Meet John</h1>
         <p>
           My first antiques venue was the Ridgefield Connecticut Antiques Show
           ~in 1989. The building was a skating rink with wall sections open to
@@ -28,7 +28,7 @@ import { Image } from "astro:assets";
           made in holland and blades made in England…hopefully.
         </p>
       </div>
-      <Image src={Logo} alt="Logo" class="h-2/5 w-2/5" />
+      <Image src={Logo} alt="Logo" class="h-2/5 md:w-2/5" />
     </div>
   </main>
 </Layout>

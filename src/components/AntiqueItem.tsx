@@ -14,20 +14,19 @@ export default function AntiqueItem(props: any) {
   }, []);
 
   return (
-    <div className="w-screen h-screen rounded-md text-black flex flex-col shadow-lg bg-white items-center justify-center">
-      <div className="flex flex-col w-screen h-screen shadow-lg md:px-48 md:py-16 text-center">
+      <div className="flex flex-col h-screen mx-12 my-8 md:px-48 md:py-16 text-center justify-between">
         <img src={currentPic} alt="alt" className="h-3/6" />
         <ul className="flex flex-row justify-center gap-4">
           {allPics.map((pic: any) => (
             <li>
-              <img src={pic} className="h-6 w-6 cursor-pointer" onClick={() => setCurrentPic(pic)} alt="Antique Item"/>
+              <img src={pic} className="h-6 w-6 cursor-pointer object-cover" onClick={() => setCurrentPic(pic)} alt="Antique Item"/>
             </li>
           ))}
         </ul>
         <h1 className="text-5xl">{params["title"]}</h1>
         <p className="text-lg">{params['price']}</p>
         <p>{params["description"]}</p>
-        <div className="flex flex-row gap-4 justify-center">
+        <div className="flex flex-col md:flex-row gap-4 justify-center">
           <a href="https://www.etsy.com/?ref=lgo">
             <button className="bg-black border border-black py-1 text-white px-5">
               Purchase
@@ -41,6 +40,5 @@ export default function AntiqueItem(props: any) {
         </div>
         <p>Powered By Etsy</p>
       </div>
-    </div>
   );
 }
