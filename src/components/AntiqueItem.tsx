@@ -27,7 +27,7 @@ export default function AntiqueItem(props: any) {
         <p className="text-lg">{params['price']}</p>
         <p>{params["description"]}</p>
         <div className="flex flex-col md:flex-row gap-4 justify-center">
-          <a href="https://www.etsy.com/?ref=lgo">
+          <a href={params['listingURL']}>
             <button className="bg-black border border-black py-1 text-white px-5">
               Purchase
             </button>

@@ -11,7 +11,7 @@ export default function InventoryItem(props: any) {
         <p>{props.description}</p>
         <br />
         <a
-          href={`/antique-item?title=${props.title}&description=${props.description}&img=${props.img}&price=${"$100"}`}
+          href={`/antique-item?title=${props.title}&description=${props.description}&img=${props.img}&price=${props.price}&listingURL=${props.listingUrl}`}
         >
           <button className="bg-black py-1 text-white px-5">View</button>
         </a>
